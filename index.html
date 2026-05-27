@@ -6,9 +6,9 @@
 		<script>
 			(function(apiKey){
 			    (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
-			    v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
+			    v=['initialize','identify','updateOptions','pageLoad','track', 'trackAgent'];for(w=0,x=v.length;w<x;++w)(function(m){
 				o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
-				y=e.createElement(n);y.async=!0;y.src='https://pendo-mcfly-static.storage.googleapis.com/agent/static/'+apiKey+'/pendo.js';
+				y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo-dev.pendo-dev.com/agent/static/'+apiKey+'/pendo.js';
 				z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
 
 				// This function creates anonymous visitor IDs in Pendo unless you change the visitor id field to use your app's values
@@ -27,7 +27,7 @@
 						"is_paying": true
 					}
 				});
-			})('76f51783-9e75-4041-7e12-30066e88c6d4');
+			})('4bb48131-1ba8-4a29-927c-2fd4d0542a5e');
 		</script>
 
 	</head>
