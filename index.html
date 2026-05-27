@@ -31,5 +31,19 @@
 		</script>
 
 	</head>
+	<body>
+		<script>
+			// Track when the widget page is loaded
+			document.addEventListener("DOMContentLoaded", function() {
+				if (typeof pendo !== "undefined" && pendo.track) {
+					pendo.track("Widget Page Loaded", {
+						page_title: document.title,
+						page_url: window.location.href,
+						referrer: document.referrer || "direct"
+					});
+				}
+			});
+		</script>
+	</body>
 </html>
 
