@@ -32,6 +32,8 @@
 
 	</head>
 	<body>
+		<button id="logout-btn" onclick="handleLogout()">Logout</button>
+
 		<script>
 			// Track when the widget page is loaded
 			document.addEventListener("DOMContentLoaded", function() {
@@ -43,6 +45,12 @@
 					});
 				}
 			});
+
+			function handleLogout() {
+				if (typeof pendo !== "undefined" && pendo.track) {
+					pendo.track("Logout Button Click");
+				}
+			}
 		</script>
 	</body>
 </html>
